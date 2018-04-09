@@ -4,7 +4,7 @@
 #
 Name     : R-ddalpha
 Version  : 1.3.1.1
-Release  : 3
+Release  : 4
 URL      : https://cran.r-project.org/src/contrib/ddalpha_1.3.1.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ddalpha_1.3.1.1.tar.gz
 Summary  : Depth-Based Classification and Calculation of Data Depth
@@ -40,11 +40,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1521189450
+export SOURCE_DATE_EPOCH=1523298917
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1521189450
+export SOURCE_DATE_EPOCH=1523298917
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
