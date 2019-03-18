@@ -4,16 +4,13 @@
 #
 Name     : R-ddalpha
 Version  : 1.3.8
-Release  : 25
+Release  : 26
 URL      : https://cran.r-project.org/src/contrib/ddalpha_1.3.8.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ddalpha_1.3.8.tar.gz
 Summary  : Depth-Based Classification and Calculation of Data Depth
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: R-ddalpha-lib = %{version}-%{release}
-Requires: R-DEoptimR
-Requires: R-magic
-Requires: R-sfsmisc
 BuildRequires : R-BH
 BuildRequires : R-DEoptimR
 BuildRequires : R-Rcpp
@@ -42,10 +39,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552866935
+export SOURCE_DATE_EPOCH=1552907481
 
 %install
-export SOURCE_DATE_EPOCH=1552866935
+export SOURCE_DATE_EPOCH=1552907481
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
