@@ -4,7 +4,7 @@
 #
 Name     : R-ddalpha
 Version  : 1.3.9
-Release  : 32
+Release  : 33
 URL      : https://cran.r-project.org/src/contrib/ddalpha_1.3.9.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ddalpha_1.3.9.tar.gz
 Summary  : Depth-Based Classification and Calculation of Data Depth
@@ -20,6 +20,7 @@ BuildRequires : R-geometry
 BuildRequires : R-robustbase
 BuildRequires : R-sfsmisc
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 No detailed description available
@@ -40,10 +41,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1569286455
+export SOURCE_DATE_EPOCH=1571816641
 
 %install
-export SOURCE_DATE_EPOCH=1569286455
+export SOURCE_DATE_EPOCH=1571816641
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
