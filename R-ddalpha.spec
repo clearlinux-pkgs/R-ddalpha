@@ -4,7 +4,7 @@
 #
 Name     : R-ddalpha
 Version  : 1.3.11
-Release  : 39
+Release  : 40
 URL      : https://cran.r-project.org/src/contrib/ddalpha_1.3.11.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ddalpha_1.3.11.tar.gz
 Summary  : Depth-Based Classification and Calculation of Data Depth
@@ -36,21 +36,22 @@ lib components for the R-ddalpha package.
 
 %prep
 %setup -q -c -n ddalpha
+cd %{_builddir}/ddalpha
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1578693568
+export SOURCE_DATE_EPOCH=1589786006
 
 %install
-export SOURCE_DATE_EPOCH=1578693568
+export SOURCE_DATE_EPOCH=1589786006
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
