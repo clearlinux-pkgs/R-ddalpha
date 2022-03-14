@@ -1,5 +1,5 @@
 PKG_NAME := R-ddalpha
-URL = https://cran.r-project.org/src/contrib/ddalpha_1.3.11.tar.gz
+URL = https://cran.r-project.org/src/contrib/ddalpha_1.3.12.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
