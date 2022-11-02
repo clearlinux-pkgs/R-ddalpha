@@ -4,7 +4,7 @@
 #
 Name     : R-ddalpha
 Version  : 1.3.13
-Release  : 59
+Release  : 60
 URL      : https://cran.r-project.org/src/contrib/ddalpha_1.3.13.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ddalpha_1.3.13.tar.gz
 Summary  : Depth-Based Classification and Calculation of Data Depth
